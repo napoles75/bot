@@ -8,7 +8,7 @@ load_dotenv()  # Carga variables de entorno (.env)
 app = Flask(__name__)
 
 # Configura tu API Key de OpenAI (https://platform.openai.com/api-keys)
-openai.api_key = os.getenv("OPENAI_API_KEY")
+openai.api_key = os.getenv("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")
 
 @app.route('/webhook', methods=['POST'])
 def webhook():
